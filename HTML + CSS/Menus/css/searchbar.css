@@ -35,34 +35,33 @@ h4 {
     overflow: hidden;
 }
 
-.nav-0 {
+.left-0 {
     float: left;
 }
 
-.nav-0 a {
+a.left-0 {
     text-decoration: none;
     color: black;
     display: inline-block;
     padding: 10px;
     float: left;
-
 }
 
-.nav-0 a:hover {
+a.left-0:hover:not(.active-0) {
     background: #eee;
 }
 
-.nav-0 a.active-0 {
+a.active-0 {
     background: #2196F3;
     color: white;
 }
 
-.assign-0 .search-bar-0 {
+.search-container-0 {
     float: right;
     position: relative;
 }
 
-.search-bar-0 input {
+.search-container-0 .search-0 {
     padding: 7px;
     font-size: 14px;
     outline: none;
@@ -72,11 +71,120 @@ h4 {
     width: 200px;
 }
 
-.search-bar-0 a {
+.search-container-0 .icon-0 {
     text-decoration: none;
     color: black;
     position: absolute;
     top: 8px;
     right: 9px;
     font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    a.left-0 {
+        float: none;
+        display: block;
+    }
+
+    .search-container-0 {
+        float: none;
+        margin: 0;
+        position: none;
+    }
+
+    .search-container-0 .search-0 {
+        float: none;
+        width: 100%;
+        position: static;
+        border: none;
+    }
+
+    .search-container-0 .icon-0 {
+        float: none;
+        display: block;
+        background: #ddd;
+        position: static;
+        padding: 5px;
+    }
+}
+
+/* --------- Assignment 1 --------- */
+.assign-1 {
+    background: #ddd;
+    overflow: hidden;
+}
+
+.left-1 {
+    float: left;
+}
+
+a.left-1 {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    float: left;
+
+}
+
+a.active-1 {
+    background: #2196F3;
+    color: white;
+}
+
+a.left-1:hover:not(.active-1) {
+    background: #eee;
+}
+
+.search-container-1 {
+    float: right;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.search-container-1 .search-1 {
+    padding: 9px;
+    font-size: 14px;
+    outline: none;
+    width: 170px;
+    float: left;
+    border: none;
+}
+
+.search-container-1 .icon-1 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px 5px 6px 5px;
+    background: #ccc;
+    float: left;
+    cursor: pointer;
+}
+
+.search-container-1 .icon-1:hover {
+    background: #bbb;
+}
+
+@media screen and (max-width: 600px) {
+    a.left-1 {
+        float: none;
+        display: block;
+    }
+
+    .search-container-1 {
+        float: none;
+        margin: 0;
+    }
+
+    .search-container-1 .search-1 {
+        float: none;
+        width: 100%;
+    }
+
+    .search-container-1 .icon-1 {
+        float: none;
+        display: block;
+        background: #ddd;
+    }
 }
