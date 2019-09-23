@@ -3,6 +3,23 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 ol, li {
@@ -33,7 +50,7 @@ header h2 {
     padding: 10px 20px;
 }
 
-.gNav a:hover {
+.gNav a:hover:not(.active) {
     background: #ddd;
     color: black;
 }
@@ -51,34 +68,78 @@ header h2 {
 }
 
 .aside {
-    flex: 30%;
+    flex: 20%;
     background: #eee;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .section {
-    flex: 70%;
-    padding: 20px;
+    flex: 80%;
+    padding: 20px 10px;
 }
 
-p.description {
-    font-size: 12px;
-    font-weight: 600;
-     margin: 10px 0;
-}
-
-p.loremImage {
+.image {
+    border: 1px solid #ddd;
+    padding: 2px;
+    background: white;
     -webkit-box-shadow: 0 10px 6px -6px #777;
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
 }
 
-h4 {
+.big {
+    width: 620px;
+}
+
+.small {
+    width: 220px;
+}
+
+.iconSmall {
+    width: 220px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+p.description {
+    font-size: 12px;
+    font-weight: 600;
     margin: 10px 0;
+}
+
+p.text {
+    margin: 10px 0;
+}
+
+h4, h2 {
+    margin-bottom: 10px;
 }
 
 footer {
     background: #ddd;
     text-align: center;
     padding: 30px;
+}
+
+@media screen and (max-width: 650px) { 
+    .gNav a, .gNav a.right {
+        float: none;
+        display: block;
+    }
+    
+    .container { 
+        display:block;
+    }
+    
+    .big {
+        width: 100%;
+    }
+    
+    .iconSmall {
+        width: 100%;
+    }
+
 }
