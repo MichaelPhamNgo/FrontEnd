@@ -89,4 +89,63 @@ h4 {
 .dropdown-content-0 a:hover {
     background: #ddd;
 }
+/* ---------------------- Assignment-1 ---------------------- */
+.assign-1 {
+    background: #333;
+    overflow: hidden;
+}
 
+.assign-1 a {
+    display: inline-block;
+    float: left;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.assign-1 a:hover {
+    background: red;
+    outline: none;
+    cursor: pointer;
+}
+
+.assign-1 .btn-1:hover {
+    background: red;
+    outline: none;
+    cursor: pointer;
+}
+
+.assign-1 button {
+    padding: 10px 20px;
+    color:white;
+    font-size: 16px;
+    border: none;
+    background: inherit;
+}
+
+.dropdown-1 {
+    width: 127px;
+    overflow: hidden;    
+}
+
+.dropdown-content-1.show {
+    display: block;
+}
+
+.dropdown-content-1 {
+    position: absolute;
+    width: 200px;
+    background: #eee;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.dropdown-content-1 a {
+    float: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content-1 a:hover {
+    background: #ddd;
+}
