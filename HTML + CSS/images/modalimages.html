@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> How TO - Modal Images </title>
+    <link rel="stylesheet" href="css/modelimages.css">
+</head>
+
+<body>
+    <div id="popUp">
+        <a class="close" onclick="closePopup()">&times;</a>
+        <img src="images/img_snow_wide.jpg" alt="the snow">
+    </div>
+    <div class="container">
+        <img class="small" onclick="openPopup()" src="images/img_snow_wide.jpg" alt="the snow">
+    </div>
+    <script>
+        var popUp = document.getElementById("popUp");
+
+        function openPopup() {
+                popUp.style.display = "block";
+        }
+
+        function closePopup() {
+                popUp.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
