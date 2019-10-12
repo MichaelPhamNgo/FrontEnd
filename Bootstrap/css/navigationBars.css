@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-0 {
+    background-color: #293a6c;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-0 {
+    font-size: 12px;
+}
+
+.header-level-0 p {
+    padding-top: 5px;
+}
+
+.nav-header-0  li.nav-item-header-0 {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header-level-1 {
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.nav-header-0 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.nav-top-button-header-0 {
+    padding: 5px 20px 0 0;
+    background-color: inherit;
+    color: white;
+    border: none;
+}
+
+#nav-setting-header-0 {
+    width: 130px;
+    height: 110px;
+    background-color: white; 
+    border-top: 2px solid yellow;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    z-index: 9;
+}
+
+#nav-setting-header-0 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+}
+
+#nav-setting-header-0 a:hover {
+    background-color: yellow;
+}
+
+#nav-currency-header-0 {
+    width: 120px;
+    height: 80px;
+    background-color: white; 
+    border-top: 2px solid yellow;
+    position: absolute;
+    padding: 10px 20px;
+    display: none;
+    z-index: 9;
+}
+
+#nav-currency-header-0 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+}
+
+#nav-currency-header-0 a:hover {
+    background-color: yellow;
+}
+
+#nav-language-header-0 {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background-color: white; 
+    border-top: 2px solid yellow;
+    padding: 10px 20px;
+    display: none;
+    z-index: 9;
+}
+
+#nav-language-header-0 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+}
+
+#nav-language-header-0 a:hover {
+    background-color: yellow;
+}
+
+.logo-header-0 {
+    margin-top: 10px;
+}
+
+.search-box-header-level-1 {
+    display: flex;
+    height: 45px;;
+}
+
+.search-form-header-level-1 {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.search-form-header-level-1 select {
+    width: 67px;
+    height: 45px;;
+}
+
+.search-form-header-level-1 input {
+    height: 45px;
+}
+
+.search-form-header-level-1 button {
+    height: 45px;
+}
+
+.favorite-container-header-0 {
+    display: flex;
+}
+
+.favorite-container-header-0 a {
+    display: block;
+}
