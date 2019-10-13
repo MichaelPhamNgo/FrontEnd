@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Example 03 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+/*        https://hocwebchuan.com/exercises/html-html5/html_basic03.php*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            background: #e1e1e1;
+            width: 800px;
+            margin: 0 auto;
+            
+        }
+        
+        .container .letter-container {
+            padding: 25px;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+        }
+        
+        .container .letter-container span {
+            border-radius: 50%;
+            border: 2px solid #70CBCE;
+            padding: 20px;
+        }
+        
+        .container .letter-container span i {
+            color: #70CBCE;
+            font-size: 25px;
+        }
+        
+        .container h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .container p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .container form {
+            text-align: center;             
+        }
+        
+        .submit-email input {
+            width: 350px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+        }
+        
+        .submit-email button {
+            background-color: #70CBCE;
+            padding: 20px 50px;
+            color: white;
+            font-size: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="letter-container">
+            <span><i class="fa fa-envelope"></i></span>
+        </div>
+        <h1>Get the invite</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+        <form action="/" class="submit-email">
+            <input type="text" placeholder="Enter Email ..." /> <br/>
+            <button>Request Invite</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
