@@ -76,9 +76,7 @@ a {
 .nav-header-0-level-1 li a:hover {
     background: #4FA4C0;
 }
-
 /* ---------------------- End First Menu ---------------------- */
-
 /* ---------------------- Begin Second Menu ---------------------- */
 .header-1-level-0 {
     display: flex;
@@ -247,10 +245,8 @@ a {
     padding: 6px;
     border: none;
 }
-
-
 /* ---------------------- End Second Menu ---------------------- */
-
+/* ---------------------- Begin Third Menu ---------------------- */
 .header-3-level-0 {
     display: flex;
     display: -webkit-flex;
@@ -377,3 +373,219 @@ a {
     display: block;
     margin: 0 !important;
 }
+/* ---------------------- End Third Menu ---------------------- */
+/* ---------------------- Begin Fourth Menu ---------------------- */
+.header-4 {
+    position: fixed;
+    width: 100%;
+}
+
+.header-4 .header-4-level-0 {
+    background-color: #EA1500;
+}
+
+.header-4-level-0 .container {
+    position: relative;
+}
+
+.header-4-level-0 .header-4-logo {
+    float: left;
+    padding: 10px 20px 10px 0;
+}
+
+ul.nav-header-4-level-0 {
+    padding: 19px 10px 20px 10px;
+    
+}
+
+ul.nav-header-4-level-0 li {
+    display: inline-block;
+    
+}
+
+ul.nav-header-4-level-0 li a {
+    text-transform: uppercase;
+    color: white;
+    font-family:sans-serif;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 21px 5px;
+}
+
+ul.nav-header-4-level-0 li a:hover{
+    color: #EA1500;
+    background-color: #e1e1e1;
+}
+
+.nav-header-4-level-11, 
+.nav-header-4-level-12,
+.nav-header-4-level-13,
+.nav-header-4-level-14,
+.nav-header-4-level-15, 
+.nav-header-4-level-16,
+.nav-header-4-level-17,
+.nav-header-4-level-18,
+.nav-header-4-level-19,
+.nav-header-4-level-20,
+.nav-header-4-level-21 {
+    position: absolute;
+    background: rgb(243, 243, 243);
+    -webkit-box-shadow: 0px 5px 11px 1px rgba(153,153,153,0.58);
+    -moz-box-shadow: 0px 5px 11px 1px rgba(153,153,153,0.58);
+    box-shadow: 0px 5px 11px 1px rgba(153,153,153,0.58);
+    margin-top: 21px;
+    display: none;
+}
+
+#viet-nam:hover .nav-header-4-level-11, 
+#anh:hover .nav-header-4-level-12,
+#tbn:hover .nav-header-4-level-14,
+#champions-league:hover .nav-header-4-level-15, 
+#y:hover .nav-header-4-level-16,
+#duc:hover .nav-header-4-level-17,
+#phap:hover .nav-header-4-level-18,
+#khach:hover .nav-header-4-level-20,
+#search:hover .nav-header-4-level-21 {
+    display: block;
+}
+
+#photo:hover .nav-header-4-level-13 {
+    display: block;
+    left: 0;
+}
+
+#video:hover .nav-header-4-level-19 {
+    display: block;
+    left: 0;
+}
+
+#search:hover .nav-header-4-level-21 {
+    display: block;
+    right: 0;
+}
+
+ul.nav-header-4-level-11 li, 
+ul.nav-header-4-level-12 li,
+ul.nav-header-4-level-13 li,
+ul.nav-header-4-level-14 li,
+ul.nav-header-4-level-15 li, 
+ul.nav-header-4-level-16 li,
+ul.nav-header-4-level-17 li,
+ul.nav-header-4-level-18 li,
+ul.nav-header-4-level-19 li,
+ul.nav-header-4-level-20 li {
+    display: block;
+}
+
+
+
+ul.nav-header-4-level-11 a, 
+ul.nav-header-4-level-12 a,
+ul.nav-header-4-level-14 a,
+ul.nav-header-4-level-15 a, 
+ul.nav-header-4-level-16 a,
+ul.nav-header-4-level-17 a,
+ul.nav-header-4-level-18 a,
+ul.nav-header-4-level-20 a{
+    padding: 7px  50px 7px 10px !important;
+    color: #333 !important;
+    display: block !important;
+}
+
+.nav-header-4-level-11 a:hover, 
+.nav-header-4-level-12 a:hover,
+.nav-header-4-level-13 a:hover,
+.nav-header-4-level-14 a:hover,
+.nav-header-4-level-15 a:hover, 
+.nav-header-4-level-16 a:hover,
+.nav-header-4-level-17 a:hover,
+.nav-header-4-level-18 a:hover,
+.nav-header-4-level-19 a:hover,
+.nav-header-4-level-20 a:hover{
+    background: #e1e1e1;
+}
+
+.nav-header-4-level-13,
+.nav-header-4-level-19,
+.nav-header-4-level-20 {
+    width: 1000px;
+}
+
+.nav-header-4-level-2-left {
+    width: 250px;
+    padding: 10px;
+    float: left;
+}
+
+.nav-header-4-level-2-left a{
+    display: block;
+    padding: 10px !important;
+    color:#333 !important;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.nav-header-4-level-2-left a:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.grid-container-13, 
+.grid-container-19 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-container-13 a,
+.grid-container-19 a {
+    display: inline-block;
+    color: #333 !important;    
+    background: none !important;
+    text-transform: none !important;
+    padding: 0px !important;
+}
+
+.grid-item-13,
+.grid-item-19 {
+    margin-bottom: 10px;
+}
+
+.header-4-logo img {
+    height: 35px;
+}
+
+.nav-header-4-level-21 {
+    min-width:315px;
+    background: #E2E2E2;
+    padding:6px;  
+}
+
+.nav-header-4-level-21-search-box {
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+
+.nav-header-4-level-21-search-box input {
+    padding: 10px;
+    width:220px;
+    border: none;
+}
+
+.nav-header-4-level-21-search-box button {
+    padding: 0 10px 0 10px;
+    border: none;
+    background-color: #278FD6;
+    color:white;
+}
+
+.header-4-level-1 {
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(209,209,209,1);
+    -moz-box-shadow: 0px 3px 8px 1px rgba(209,209,209,1);
+    box-shadow: 0px 3px 8px 1px rgba(209,209,209,1);    
+}
+
+/* ---------------------- Begin Fourth Menu ---------------------- */
