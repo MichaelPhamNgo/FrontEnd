@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Example 06 </title>
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 1024px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+        }
+
+        h1 span {
+            z-index: 1;
+            background: white;
+            padding: 0 20px;
+            position: relative;
+            
+        }
+
+        h1::after {
+            position: absolute;
+            display: block;
+            width: 98%;
+            height: 1px;
+            background-color: #ccc;
+            content: " ";
+            top: 20px;
+            margin-left: 8px;
+        }
+
+        .flex-row {
+           display: flex;
+            display: -webkit-flex;
+        }
+        
+        .flex-col {
+            display: flex;
+            display: -webkit-flex;
+            background-color: #8598CC;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;
+            width: 25%;
+            margin: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 80px 50px;
+        }
+        
+        .grid-row {
+           display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            grid-column-gap: 10px;
+        }
+        
+        .grid-col {
+            display: flex;
+            display: -webkit-flex;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            background-color: #8598CC;
+            padding: 80px 50px;
+            justify-content: center;
+            -webkit-justify-content: center;
+            align-items: center;
+            -webkit-align-items: center;            
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>Using Flex</span></h1>
+        <div class="flex-row">
+            <div class="flex-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="flex-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="flex-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="flex-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+        </div>        
+        <h1><span>Using Grid</span></h1>
+        <div class="grid-row">
+            <div class="grid-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="grid-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="grid-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+            <div class="grid-col">
+                <p>Học Web Chuẩn</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
