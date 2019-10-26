@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Example 15</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        width: 1200px;
+        background: #eee;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-size: 50px;
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #999;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px 10px;
+      }
+
+      .grid-row {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 20px;
+      }
+
+      .grid-column {
+        background: white;
+      }
+
+      .grid-column .hwc {
+        height: 200px;
+        background: #91e0e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .grid-column .hwc p {
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      .grid-column h4 {
+        font-size: 20px;
+        padding: 20px 10px 10px 10px;
+      }
+
+      .grid-column p {
+        text-align: left;
+        padding: 10px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Our Service</h2>
+      <p>
+        Our Service unlimited solutions to all your business needs. In the
+        installation package we prepare search engine optimization, social media
+        support, we provide corporate identity and graphic design services.
+      </p>
+      <div class="grid-row">
+        <div class="grid-column">
+          <div class="hwc">
+            <p>Học Web Chuẩn</p>
+          </div>
+          <h4>Smart Swatch Editions</h4>
+          <p>
+            Aliqum sagittis ligula et sem lacinia, ut facilisis enim
+            sollicitudim. Proin nisi est, convallis nec purus vitae, iaculis
+            posuere sapien. Cum sociis natoque.
+          </p>
+        </div>
+        <div class="grid-column">
+          <div class="hwc">
+            <p>Học Web Chuẩn</p>
+          </div>
+          <h4>Web UI Kit Design</h4>
+          <p>
+            Duis at tellus at dui tincidunt scelerisque nec sed felis.
+            Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum
+            fermentum erat. It nam auctor.
+          </p>
+        </div>
+        <div class="grid-column">
+          <div class="hwc">
+            <p>Học Web Chuẩn</p>
+          </div>
+          <h4>Mobile Optimiztion</h4>
+          <p>
+            Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet
+            lacus vitae massa sodales aliquam at eget quam. Integer ultricies et
+            magna quis accumsan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
