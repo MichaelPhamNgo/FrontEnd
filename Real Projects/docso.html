@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang tính diện tích và chu vi hình tròn</title>
+    <title>ĐỌC SỐ</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 600px;
+            width: 500px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -20,18 +20,29 @@
         .row {
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             padding: 10px;
         }
 
         .row .col-1 {
-            flex-basis: 100px;
-            line-height: 1.8;
+            flex-basis: 200px;
+            text-align: center;
         }
 
-        .row .col-2 input{
+        .col-1 input {
             padding: 5px;
-            width: 400px;
+        }
+
+        .row .col-2 {
+            flex-basis: 100px;
+            text-align: center;
+        }
+
+        .col-2 button {
+            padding: 5px 10px;
+            border: none;
+            background: #2574a9;
+            color: white;
         }
 
          .row.row.bg-blue {
@@ -55,38 +66,22 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    DIỆN TÍCH VÀ CHU VI HÌNH TRÒN
+                    ĐỌC SỐ
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Bán kính:
+                    <div class="col-1-1">Nhập số (0 -> 9)</div>
+                    <div class="col-1-2"><input type="text" name="number"></div>
                 </div>
                 <div class="col-2">
-                    <input type="text" name="radius" id="radius">
+                    <button type="submit">=></button>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-1">
-                    Diện tích:
+                    <div class="col-1-1">Bằng chữ</div>
+                    <div class="col-1-2"><input type="text" name="number"></div>
                 </div>
-                <div class="col-2">
-                    <input type="text" name="area" id="area" disabled>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Chu vi:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="perimeter" id="perimeter" disabled>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <button type="submit" class="submit">Tính</button>
-                </div>
-            </div>
+            </div>            
         </div>
     </form>
 </body>

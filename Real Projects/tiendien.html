@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang tính diện tích và chu vi hình tròn</title>
+    <title>THANH TOÁN TIỀN ĐIỆN</title>
     <style>
         * {
             padding: 0;
@@ -25,13 +25,22 @@
         }
 
         .row .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
+        }
+
+        .row .col-2 {
+            width: 400px;
         }
 
         .row .col-2 input{
             padding: 5px;
-            width: 400px;
+            width: 360px;
+        }
+
+        .row .col-3 {
+            width: 50px;
+            line-height: 1.8;
         }
 
          .row.row.bg-blue {
@@ -55,32 +64,53 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    DIỆN TÍCH VÀ CHU VI HÌNH TRÒN
+                    THANH TOÁN TIỀN ĐIỆN
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Bán kính:
+                    Tên chủ hộ:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="radius" id="radius">
+                    <input type="text" name="name" id="name">
                 </div>
+                <div class="col-3"></div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Diện tích:
+                    Chỉ số cũ:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="area" id="area" disabled>
+                    <input type="text" name="old" id="old">
                 </div>
+                <div class="col-3"> (Kw)</div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Chu vi:
+                    Chỉ số mới:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="perimeter" id="perimeter" disabled>
+                    <input type="text" name="new" id="new">
                 </div>
+                <div class="col-3"> (Kw)</div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Đơn giá:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="price" id="price">
+                </div>
+                <div class="col-3">(VNĐ)</div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Số tiền thanh toán:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="total" id="total" disabled>
+                </div>
+                <div class="col-3">(VNĐ)</div>
             </div>
             <div class="row">
                 <div class="col">

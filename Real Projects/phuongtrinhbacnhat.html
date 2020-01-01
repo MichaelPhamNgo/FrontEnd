@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang tính diện tích và chu vi hình tròn</title>
+    <title>CẠNH HUYỀN TAM GIÁC VUÔNG</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 600px;
+            width: 400px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -20,8 +20,14 @@
         .row {
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
         }
 
         .row .col-1 {
@@ -29,16 +35,26 @@
             line-height: 1.8;
         }
 
-        .row .col-2 input{
-            padding: 5px;
-            width: 400px;
+        .row .col-2 {
+            width: 300px;
         }
 
-         .row.row.bg-blue {
-            background: #2574a9;
-            color: white;
-            font-weight: 600;
+        .col-2 #result{
+            padding: 5px;
+            width: 250px;
         }
+
+        .col-2-1 #numberA {
+            padding: 5px;
+            width: 60px;
+            float: left;
+        }
+
+        .col-2-2 #numberB {
+            padding: 5px;
+            width: 60px;
+        }
+
 
         .submit {
             background: #2574a9;
@@ -55,36 +71,33 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    DIỆN TÍCH VÀ CHU VI HÌNH TRÒN
+                    GIẢI PHƯƠNG TRÌNH BẬC NHẤT
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Bán kính:
+                    Phương trình:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="radius" id="radius">
+                    <div class="col-2-1">
+                        <input type="text" name="numberA" id="numberA">
+                    </div>
+                    <div class="col-2-2">
+                       &nbsp; x + <input type="text" name="numberB" id="numberB"> = 0
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Diện tích:
+                    Nghiệm:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="area" id="area" disabled>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Chu vi:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="perimeter" id="perimeter" disabled>
+                    <input type="text" name="numberB" id="result">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    <button type="submit" class="submit">Giải phương trình</button>
                 </div>
             </div>
         </div>

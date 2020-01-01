@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang tính diện tích và chu vi hình tròn</title>
+    <title>KẾT QUẢ HỌC TẬP</title>
     <style>
         * {
             padding: 0;
@@ -20,13 +20,17 @@
         .row {
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             padding: 10px;
         }
 
         .row .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
+        }
+
+        .row .col-2 {
+            width: 450px;
         }
 
         .row .col-2 input{
@@ -34,7 +38,7 @@
             width: 400px;
         }
 
-         .row.row.bg-blue {
+        .row.row.bg-blue {
             background: #2574a9;
             color: white;
             font-weight: 600;
@@ -55,36 +59,52 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    DIỆN TÍCH VÀ CHU VI HÌNH TRÒN
+                    KẾT QUẢ HỌC TẬP
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Bán kính:
+                    Điểm HK1:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="radius" id="radius">
+                    <input type="text" name="score1" id="score1">
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Diện tích:
+                    Điểm HK2:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="area" id="area" disabled>
+                    <input type="text" name="score2" id="score2">
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Chu vi:
+                    Điểm trung bình:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="perimeter" id="perimeter" disabled>
+                    <input type="text" name="average" id="average" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Kết quả:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="total" id="total" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Xếp loại học lực:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="range" id="range" disabled>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    <button type="submit" class="submit">Xem kết quả</button>
                 </div>
             </div>
         </div>
