@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>CẠNH HUYỀN TAM GIÁC VUÔNG</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -36,24 +36,24 @@
         }
 
         .col-2 {
-            flex-basis: 400px;
+            width: 500px;
+        }
+
+        .col-2 #result{
+            padding: 5px;
+            width: 450px;
+        }
+
+        .col-2 #numberA, #numberB, #numberC  {
+            padding: 5px;
+            width: 60px;
         }
         
-        .col-2 input{
-            padding: 5px;
-            width: 100px;
-        }
-
         .submit {
             background: #2574a9;
-            padding: 10px 40px;
+            padding: 10px 20px;
             border: none;
             color: white;
-        }
-
-        .result {
-            padding: 5px;
-            width: 400px;
         }
 
 
@@ -64,25 +64,37 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    GIẢI PHƯƠNG TRÌNH BẬC NHẤT
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    Phương trình:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <span class="col-2-1">
+                        <input type="text" name="numberA" id="numberA"/>                       
+                    </span>
+                    <span class="col-2-2">
+                        &nbsp; x<sup>2</sup> +&nbsp; 
+                        <input type="text" name="numberB" id="numberB"/>
+                    </span>
+                    <span class="col-2-3">
+                        &nbsp; x + &nbsp; <input type="text" name="numberC" id="numberC"/> = 0
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Nghiệm:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="numberB" id="result">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" name="result" class="result">
+                    <button type="submit" class="submit">Giải phương trình</button>
                 </div>
             </div>
         </div>

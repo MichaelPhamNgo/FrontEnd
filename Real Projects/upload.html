@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>THUỘC TÍNH CỦA TẬP TIN</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -20,7 +20,7 @@
         .row {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             padding: 10px;
         }
 
@@ -31,32 +31,25 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
         }
 
-        .col-2 {
-            flex-basis: 400px;
-        }
-        
-        .col-2 input{
+        .col-2 select{
             padding: 5px;
-            width: 100px;
         }
 
-        .submit {
-            background: #2574a9;
-            padding: 10px 40px;
-            border: none;
-            color: white;
-        }
-
-        .result {
+        .col-2 input{
             padding: 5px;
             width: 400px;
         }
 
-
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -64,25 +57,30 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    THUỘC TÍNH CỦA TẬP TIN
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    Tập tin:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <input type="file" name="chooseFile" id="chooseFile">                    
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
+                    <button type="submit" class="submit">Ghi nhận thuộc tính của tập tin</button>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>Thuộc tính của tập tin</b>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" name="result" class="result">
+                    
                 </div>
             </div>
         </div>

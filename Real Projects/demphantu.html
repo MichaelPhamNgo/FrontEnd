@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang tính diện tích và chu vi hình tròn</title>
+    <title>ĐẾM PHẦN TỬ, GHÉP MẢNG VÀ SẮP XẾP</title>
     <style>
         * {
             padding: 0;
@@ -31,7 +31,7 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
+            flex-basis: 200px;
             line-height: 1.8;
         }
 
@@ -53,12 +53,12 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    DIỆN TÍCH VÀ CHU VI HÌNH TRÒN
+                    ĐẾM PHẦN TỬ, GHÉP MẢNG VÀ SẮP XẾP
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Bán kính:
+                    Mảng A:
                 </div>
                 <div class="col-2">
                     <input type="text" name="radius" id="radius">
@@ -66,7 +66,20 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    Diện tích:
+                    Mảng B:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="radius" id="radius">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="submit">Thực hiện</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Số phần tử mảng A:
                 </div>
                 <div class="col-2">
                     <input type="text" name="area" id="area" disabled>
@@ -74,7 +87,31 @@
             </div>
             <div class="row">
                 <div class="col-1">
-                    Chu vi:
+                    Số phần tử mảng B:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="area" id="area" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Mảng C:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Mảng C tăng dần:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Mảng C giảm dần:
                 </div>
                 <div class="col-2">
                     <input type="text" name="perimeter" id="perimeter" disabled>
@@ -82,7 +119,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    (Ghi chú: Các phần tử trong mảng sẽ cách nhau bằng dấu ",")
                 </div>
             </div>
         </div>

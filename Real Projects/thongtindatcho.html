@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THÔNG TIN ĐẶT CHỖ</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content:left;
+            padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .col-1-1 {
+            flex-basis: 400px;
+            line-height: 1.8;
+        }
+
+        .col-1-1 input {
+            padding: 5px ;
+            width: 100px;
+        } 
+        .col-2-1 input {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .col-2-2 input[type=radio]{
+            margin: 0 5px;
+        }
+
+        .col-1-2 {
+            flex-basis: 350px;
+            line-height: 1.8;
+        }
+
+        .col-1-2 input {
+            padding: 5px ;
+            width: 200px;
+        } 
+
+        .col-2-2 input[type=text], select {
+            padding: 5px;
+            width: 200px;
+        }
+
+        .col-1 {
+            flex-basis: 120px;
+        }
+
+        .col-2 input{
+            margin: 0 5px;
+        }
+
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row bg-blue">
+                <div class="col">
+                    THÔNG TIN ĐẶT CHỖ
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-1">
+                    Số khách tham dự tiệc của quý khách: <input type="text" name="occupant">
+                </div>
+                <div class="col-2-1">
+                    Ngày: <input type="date" name="date">              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Loại tiệc:
+                </div>
+                <div class="col-2">
+                    <input type="checkbox" name="moring" value="moring"> Tiệc sáng
+                    <input type="checkbox" name="afternoon" value="afternoon"> Tiệc trưa
+                    <input type="checkbox" name="everning" value="everning"> Tiệc tối
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Địa điểm:
+                </div>
+                <div class="col-2">                    
+                    <input type="radio" name="place" value="indoor" checked="checked"> Trong nhà
+                    <input type="radio" name="place" value="outdoor"> Ngoài trời
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                   Tên quý khách: <input type="text" name="name" id="name">
+                </div>
+                <div class="col-2-2">
+                   Địa chỉ liên lạc: <input type="text" name="name" id="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-2">
+                   Độ tuổi: 
+                   <select>
+                        <option value="19-34">Từ 19 đến 34 tuổi</option>
+                        <option value="19-34">Từ 19 đến 34 tuổi</option>
+                        <option value="19-34">Từ 19 đến 34 tuổi</option>
+                        <option value="19-34">Từ 19 đến 34 tuổi</option>
+                   </select>
+                   
+                </div>
+                <div class="col-2-2">
+                   Giới tính: <input type="radio" name="place" value="indoor" checked="checked"> Trong nhà
+                   <input type="radio" name="place" value="outdoor"> Ngoài trời
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Qúy khách biết đến nhà hàng của chúng tôi qua: 
+                    <select name="communication" size="3" multiple>
+                        <option value="baochi">Báo chí</option>
+                        <option value="daiphatthanh">Đài phát thanh</option>
+                        <option value="tivi">Tivi</option>
+                        <option value="internet">Internet</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea name="" id="" cols="95" rows="20"></textarea>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <button type="submit" class="submit">Đặt chỗ</button>
+                </div>
+            </div>            
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>Đặt chỗ</b>
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    THÔNG TIN ĐẶT CHỖ
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

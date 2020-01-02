@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>THANH TOÁN TIỀN ĐIỆN</title>
+    <title>TÍNH TOÁN TRÊN DÃY SỐ</title>
     <style>
         * {
             padding: 0;
@@ -19,14 +19,17 @@
 
         .row {
             display: flex;
-            justify-content: center;
-            align-content: center;
             padding: 10px;
         }
 
         .row.bg-blue {
             background: #2574a9;
             color: white;
+            font-weight: 600;
+            justify-content: center;        
+        }
+
+        .col {
             font-weight: 600;
         }
 
@@ -36,17 +39,17 @@
         }
 
         .col-2 {
-            width: 400px;
+            flex-basis: 450px;
         }
 
-        .col-2 input{
+        .col-2.first input{
+            width: 100px;
             padding: 5px;
-            width: 360px;
         }
 
-        .col-3 {
-            width: 50px;
-            line-height: 1.8;
+        .col-2.others input{
+            width: 400px;
+            padding: 5px;
         }
 
         .submit {
@@ -64,57 +67,57 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    THANH TOÁN TIỀN ĐIỆN
+                    TÍNH TOÁN TRÊN DÃY SỐ
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tên chủ hộ:
+                    Giới hạn của dãy số:
                 </div>
-                <div class="col-2">
-                    <input type="text" name="name" id="name">
+                <div class="col-2 first">
+                    Số bắt đầu: <input type="text" name="start" id="start"> Số kết thúc: <input type="text" name="end" id="end">
                 </div>
-                <div class="col-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Chỉ số cũ:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="old" id="old">
-                </div>
-                <div class="col-3"> (Kw)</div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Chỉ số mới:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="new" id="new">
-                </div>
-                <div class="col-3"> (Kw)</div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Đơn giá:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="price" id="price">
-                </div>
-                <div class="col-3">(VNĐ)</div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    Số tiền thanh toán:
-                </div>
-                <div class="col-2">
-                    <input type="text" name="total" id="total" disabled>
-                </div>
-                <div class="col-3">(VNĐ)</div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    Kết quả:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tổng các số:
+                </div>
+                <div class="col-2 others">
+                    <input type="text" name="sum" id="sum" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tích các số:
+                </div>
+                <div class="col-2 others">
+                    <input type="text" name="multiply" id="multiply" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tổng các số chẵn:
+                </div>
+                <div class="col-2 others">
+                    <input type="text" name="sumeven" id="sumeven" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tổng các số lẻ:
+                </div>
+                <div class="col-2 others">
+                    <input type="text" name="sumodd" id="sumodd" disabled>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <button type="submit" class="submit">Tính toán</button>
                 </div>
             </div>
         </div>

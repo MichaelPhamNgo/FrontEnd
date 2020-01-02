@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>THAY THẾ TỪ TRONG CHUỔI</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -23,7 +23,7 @@
             align-items: center;
             padding: 10px;
         }
-
+        
         .row.bg-blue {
             background: #2574a9;
             color: white;
@@ -35,28 +35,17 @@
             line-height: 1.8;
         }
 
-        .col-2 {
-            flex-basis: 400px;
-        }
-        
         .col-2 input{
             padding: 5px;
-            width: 100px;
+            width: 420px;
         }
 
         .submit {
             background: #2574a9;
-            padding: 10px 40px;
+            padding: 10px 20px;
             border: none;
             color: white;
         }
-
-        .result {
-            padding: 5px;
-            width: 400px;
-        }
-
-
     </style>
 </head>
 <body>
@@ -64,25 +53,43 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    THAY THẾ TỪ TRONG CHUỔI
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    Chuỗi:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <input type="text" name="edgeA" id="edgeA">
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
+                <div class="col-1">
+                   Từ gốc:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="edgeB" id="edgeB">
                 </div>
             </div>
             <div class="row">
+                <div class="col-1">
+                    Từ thay thế:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="hypotenuse" id="hypotenuse">
+                </div>
+            </div>            
+            <div class="row">
                 <div class="col">
-                    <input type="text" name="result" class="result">
+                    <button type="submit" class="submit">Thay thế</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                    <input type="text" name="hypotenuse" id="hypotenuse" disabled>
                 </div>
             </div>
         </div>

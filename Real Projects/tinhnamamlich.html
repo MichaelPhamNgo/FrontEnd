@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>TÍNH NĂM ÂM LỊCH</title>
     <style>
         * {
             padding: 0;
@@ -31,32 +31,32 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
-            line-height: 1.8;
+            text-align: center;
+        }
+
+        .col-1 input {
+            padding: 5px;
+            width: 150px;
         }
 
         .col-2 {
-            flex-basis: 400px;
+            flex-basis: 100px;
+            text-align: center;
         }
-        
-        .col-2 input{
-            padding: 5px;
-            width: 100px;
+
+        .col-2 button {
+            padding: 7px 10px;
+            border: none;
+            background: #2574a9;
+            color: white;
         }
 
         .submit {
             background: #2574a9;
-            padding: 10px 40px;
+            padding: 10px 20px;
             border: none;
             color: white;
         }
-
-        .result {
-            padding: 5px;
-            width: 400px;
-        }
-
-
     </style>
 </head>
 <body>
@@ -64,27 +64,27 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    TÍNH NĂM ÂM LỊCH
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    <div class="col-1-1">Năm dương lịch</div>
+                    <div class="col-1-2"><input type="text" name="number"></div>
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <button type="submit">=></button>
                 </div>
-            </div>
+                <div class="col-1">
+                    <div class="col-1-1">Năm âm lịch</div>
+                    <div class="col-1-2"><input type="text" name="number"></div>
+                </div>
+            </div>    
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
+                    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" name="result" class="result">
-                </div>
-            </div>
+            </div>        
         </div>
     </form>
 </body>

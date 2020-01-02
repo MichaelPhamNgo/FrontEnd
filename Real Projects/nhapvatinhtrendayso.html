@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>NHẬP VÀ TÍNH TRÊN DÃY SỐ</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -23,7 +23,7 @@
             align-items: center;
             padding: 10px;
         }
-
+        
         .row.bg-blue {
             background: #2574a9;
             color: white;
@@ -35,28 +35,17 @@
             line-height: 1.8;
         }
 
-        .col-2 {
-            flex-basis: 400px;
-        }
-        
         .col-2 input{
-            padding: 5px;
-            width: 100px;
-        }
-
-        .submit {
-            background: #2574a9;
-            padding: 10px 40px;
-            border: none;
-            color: white;
-        }
-
-        .result {
             padding: 5px;
             width: 400px;
         }
 
-
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -64,25 +53,33 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    NHẬP VÀ TÍNH TRÊN DÃY SỐ
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    Nhập dãy số:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <input type="text" name="edgeA" id="edgeA"> (*)
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
+                    <button type="submit" class="submit">Tỗng dãy số</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tổng dãy số:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="hypotenuse" id="hypotenuse" disabled> &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="text" name="result" class="result">
+                    (*) Các số được nhập cách nhau bằng dấu ","
                 </div>
             </div>
         </div>

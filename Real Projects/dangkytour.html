@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ĐĂNG KÝ TOUR DU LỊCH</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content:left;
+            padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .col-1 {
+            flex-basis: 200px;
+        }
+
+        .col-2 input {
+            padding: 5px;
+            width: 300px;
+        } 
+        .col-2 select{
+            padding: 5px;
+        }
+
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row bg-blue">
+                <div class="col">
+                    ĐĂNG KÝ TOUR DU LỊCH
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tên Tour:
+                </div>
+                <div class="col-2">
+                    <select>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                        <option value="hanoi-halong-sapa">Hà Nội - Hà Long - Sapa</option>
+                    </select>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Ngày khởi hành:
+                </div>
+                <div class="col-2">
+                    <input type="date" name="day" id="day">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Phương tiện di chuyển:
+                </div>
+                <div class="col-2">
+                    <select>
+                        <option value="car">Xe hơi</option>
+                        <option value="car">Xe hơi</option>
+                        <option value="car">Xe hơi</option>
+                        <option value="car">Xe hơi</option>
+                        <option value="car">Xe hơi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Số lượng đăng ký:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="price" id="price">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tên khách hàng:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="price" id="price">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Liên hệ theo địa chỉ:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="price" id="price">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Số điện thoại:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="price" id="price">
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Những yêu cầu kèm theo
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea name="" id="" cols="80" rows="20"></textarea>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <button type="submit" class="submit">Đăng ký tour</button>
+                </div>
+            </div>            
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>đăng ký tour</b>
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    THÔNG TIN ĐĂT TOUR DU LỊCH
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

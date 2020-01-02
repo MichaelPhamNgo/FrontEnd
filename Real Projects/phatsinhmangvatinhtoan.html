@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CẠNH HUYỀN TAM GIÁC VUÔNG</title>
+    <title>PHÁT SINH MẢNG VÀ TÍNH TOÁN</title>
     <style>
         * {
             padding: 0;
@@ -20,7 +20,7 @@
         .row {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             padding: 10px;
         }
 
@@ -31,13 +31,13 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
         }
 
         .col-2 input{
             padding: 5px;
-            width: 450px;
+            width: 400px;
         }
 
         .submit {
@@ -53,36 +53,59 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÌM SỐ LỚN HƠN
+                    PHÁT SINH MẢNG VÀ TÍNH TOÁN
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số A:
+                    Nhập phần tử:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="numberA" id="numberA">
+                    <input type="text" name="radius" id="radius">
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số B:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="numberB" id="numberB">
+                    <button type="submit" class="submit">Phát sinh và tính toán</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số lớn hơn:
+                    Mảng:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="greaterNumber" id="greaterNumber" disabled>
+                    <input type="text" name="area" id="area" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    GTLN trong mảng:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    GTNN trong mảng:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tổng mảng:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    (Ghi chú: Các phần tử trong mảng sẽ có giá trị từ 0 đến 20)
                 </div>
             </div>
         </div>

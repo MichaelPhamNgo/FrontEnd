@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TÍNH NGÀY TRONG THÁNG</title>
+    <title>SẮP XẾP MẢNG</title>
     <style>
         * {
             padding: 0;
@@ -12,7 +12,7 @@
         }
 
         .container {
-            width: 500px;
+            width: 600px;
             margin: 0 auto;
             border: 1px solid #999;
         }
@@ -20,7 +20,7 @@
         .row {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             padding: 10px;
         }
 
@@ -31,32 +31,21 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
         }
 
-        .col-2 {
-            flex-basis: 400px;
-        }
-        
         .col-2 input{
-            padding: 5px;
-            width: 100px;
-        }
-
-        .submit {
-            background: #2574a9;
-            padding: 10px 40px;
-            border: none;
-            color: white;
-        }
-
-        .result {
             padding: 5px;
             width: 400px;
         }
 
-
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -64,25 +53,48 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÍNH NGÀY TRONG THÁNG
+                    SẮP XẾP MẢNG
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Tháng / năm:
+                    Nhập mảng:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="start" id="start"> / <input type="text" name="start" id="start">
+                    <input type="text" name="radius" id="radius">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="submit">Sắp xếp tăng / giảm</button>
+                </div>
+            </div>
+            <div class="row" style="font-weight: 600; justify-content: left;">
+                <div class="col-1">
+                    Sau khi sắp xếp
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Tăng dần:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="area" id="area" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    Giảm dần:
+                </div>
+                <div class="col-2">
+                    <input type="text" name="perimeter" id="perimeter" disabled>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính số ngày</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="text" name="result" class="result">
+                    (Ghi chú: Các phần tử trong mảng sẽ cách nhau bằng dấu ",")
                 </div>
             </div>
         </div>

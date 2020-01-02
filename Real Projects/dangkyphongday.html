@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CẠNH HUYỀN TAM GIÁC VUÔNG</title>
+    <title>ĐĂNG KÝ PHÒNG DẠY</title>
     <style>
         * {
             padding: 0;
@@ -20,7 +20,7 @@
         .row {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-content: center;
             padding: 10px;
         }
 
@@ -31,13 +31,17 @@
         }
 
         .col-1 {
-            flex-basis: 100px;
+            flex-basis: 150px;
             line-height: 1.8;
+        }
+
+        .col-2 select{
+            padding: 5px;
         }
 
         .col-2 input{
             padding: 5px;
-            width: 450px;
+            width: 400px;
         }
 
         .submit {
@@ -53,36 +57,55 @@
         <div class="container">
             <div class="row bg-blue">
                 <div class="col">
-                    TÌM SỐ LỚN HƠN
+                    ĐĂNG KÝ PHÒNG DẠY
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số A:
+                    Phòng số:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="numberA" id="numberA">
+                    <select>
+                        <option value="A001">A001</option>
+                        <option value="A002">A002</option>
+                        <option value="A003">A003</option>
+                        <option value="A004">A004</option>
+                        <option value="A005">A005</option>
+                        <option value="A006">A006</option>
+                        <option value="A007">A007</option>
+                        <option value="A008">A008</option>
+                    </select>                     
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số B:
+                    Giáo sư giảng dạy:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="numberB" id="numberB">
+                    <input type="text" name="old" id="old">
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    Số lớn hơn:
+                    Ngày / tháng / năm:
                 </div>
                 <div class="col-2">
-                    <input type="text" name="greaterNumber" id="greaterNumber" disabled>
+                    <input type="date" name="day" id="day">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="submit">Tính</button>
+                    <button type="submit" class="submit">Ghi nhận</button>
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>Ghi nhận</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
                 </div>
             </div>
         </div>
