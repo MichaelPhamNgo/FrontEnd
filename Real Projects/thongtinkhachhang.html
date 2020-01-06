@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THÔNG TIN KHÁCH HÀNG</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content:left;
+            padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .col-1 {
+            width: 110px;
+            line-height: 1.6;
+        }
+
+        .col-2 input[type=text], input[type=password]{
+            width: 250px;
+            padding: 3px;
+        }
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row bg-blue">
+                <div class="col">
+                    THÔNG TIN KHÁCH HÀNG
+                </div>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Họ và tên:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Email:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Địa chỉ:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <input type="submit" value="Xác nhận" class="submit">
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>xác nhận</b>
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    KẾT QUẢ
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

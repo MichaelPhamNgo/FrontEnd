@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VẼ BẢNG</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content:left;
+            padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .col-1 {
+            width: 80px;
+            line-height: 1.8;
+        }
+
+        .col-2 {
+            width: 220px;
+            line-height: 1.8;
+        }
+
+        .col-2 input[type=text] {
+            width: 180px;
+            padding: 5px;
+        }
+
+        .col-3 {
+            line-height: 1.8;
+        }
+
+        .col-3 input[type=text] {
+            width: 180px;
+            padding: 5px;
+        }
+
+        .col-4 {
+            line-height: 1.8;        
+        }
+
+        .col-4 input[type=text] {
+            width: 180px;
+            padding: 5px;
+        }
+
+        .row-1 {
+            border-top: 1px solid #2574a9;
+            border-bottom: 1px solid #2574a9;
+            padding: 0px 80px;
+        }
+
+        .row-1-1 {
+            padding: 10px;
+        }
+
+        .row-1-1 [type=text] {
+            width: 400px;
+            padding: 5px;
+        }
+
+        .row-1-2 {
+            padding: 10px;
+            display: flex;
+        }
+
+        .col-1-2-1 {
+            width: 50px;
+            line-height: 1.8;
+        }
+
+        .col-1-2-2 input[type=text]{
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .col-1-2-3 {
+            width: 50px;
+            line-height: 1.8;
+        }
+
+        .col-1-2-4 input[type=text]{
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .col-1-2-5 {
+            width: 100px;
+            line-height: 1.8;
+        }
+
+        .col-1-2-6 select{
+            width: 100px;
+            padding: 5px;
+        }
+
+        .submit {
+            background: #2574a9;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row bg-blue">
+                <div class="col">
+                    VẼ BẢNG
+                </div>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Số dòng:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+                <span class="col-3">
+                    Số cột: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2">
+                    Độ rộng:
+                </span>
+                <span class="col-3">
+                    <input type="text" name="price" id="price"> &nbsp;&nbsp;pixel
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2">
+                    Độ dày đường viền:
+                </span>
+                <span class="col-3">
+                    <input type="text" name="price" id="price"> &nbsp;&nbsp;pixel
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2">
+                    Khoảng cách ô:
+                </span>
+                <span class="col-3">
+                    <input type="text" name="price" id="price">&nbsp;&nbsp;pixel
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2">
+                    Khoảng cách dòng:
+                </span>
+                <span class="col-3">
+                    <input type="text" name="price" id="price">&nbsp;&nbsp;pixel
+                </span>
+            </div>            
+            <div class="row-1">
+                <div class="row-1-1">                    
+                    Nội dung: <input type="text" name="price" id="price">                    
+                </div>
+                <div class="row-1-2">
+                    <span class="col-1-2-1">
+                        Dòng:
+                    </span>
+                    <span class="col-1-2-2">
+                        <input type="text" name="price" id="price">
+                    </span>
+                    <span class="col-1-2-3">
+                        Cột:
+                    </span>
+                    <span class="col-1-2-4">
+                        <input type="text" name="price" id="price">
+                    </span>
+                    <span class="col-1-2-5">
+                        Màu nền:
+                    </span>
+                    <span class="col-1-2-6">
+                        <select>
+                            <option value="yellow">yellow</option>
+                            <option value="yellow">yellow</option>
+                            <option value="yellow">yellow</option>
+                        </select>
+                    </span>
+                </div>               
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    (Lưu ý: khi độ dày đường viền = 0 thì ta sẽ khong thể thấy được table)
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <input type="submit" value="Tạo bảng" class="submit">
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>tạo bảng</b> (có định dạng nội dung cho một ô cụ thể)
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    KẾT QUẢ
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi nhấn <b>tạo bảng</b> (Không có định dạng nội dung cho một ô cụ thể)
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    KẾT QUẢ
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

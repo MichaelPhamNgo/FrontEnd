@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUẢN LÝ NHÂN VIÊN</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid #999;
+        }
+
+        .row {
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .row.bg-blue {
+            background: #2574a9;
+            color: white;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .col-1 {
+            width: 120px;
+            line-height: 1.8;
+        }
+
+        .col-2 {
+            width: 230px;
+        }
+
+        .col-2 input[type=text] {
+            width: 200px;
+            padding: 2px;
+        }
+
+        .col-3 {
+            width: 200px;
+            line-height: 1.8;
+        }
+
+        .col-3 input[type=text] {
+            padding: 2px;
+        }
+
+        .col-4 input[type=text] {
+            width: 200px;
+            padding: 2px;
+        }
+
+        .submit {
+            background: #2574a9;
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row bg-blue">
+                <div class="col">
+                    QUẢN LÝ NHÂN VIÊN
+                </div>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Họ và tên:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+                <span class="col-3">
+                    Số con:
+                </span>
+                <span class="col-4">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Ngày sinh:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+                <span class="col-3">
+                    Ngày vào làm:
+                </span>
+                <span class="col-4">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Giới tính:
+                </span>
+                <span class="col-2">
+                    <input type="radio" name="price" id="price"> Nam
+                    <input type="radio" name="price" id="price"> Nữ
+                </span>
+                <span class="col-3">
+                    Hệ số lương:
+                </span>
+                <span class="col-4">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Loại nhân viên:
+                </span>
+                <span class="col-2">
+                    <input type="radio" name="price" id="price"> Văn phòng                    
+                </span>
+                <span class="col-3">
+                    <input type="radio" name="price" id="price"> Sản xuất
+                </span>
+                <span class="col-4"></span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2">
+                    Số ngày vắng: <input type="text" name="price" id="price" style="width:100px;">
+                </span>
+                <span class="col-3">
+                    Số sản phầm: <input type="text" name="price" id="price" style="width:80px;">
+                </span>
+                <span class="col-4">
+                    Tăng ca: <input type="radio" name="price" id="price"> Có &nbsp;&nbsp;<input type="radio" name="price" id="price"> Không
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1">
+                    Ngày sinh:
+                </span>
+                <span class="col-2">
+                    <input type="text" name="price" id="price">
+                </span>
+                <span class="col-3">
+                    Ngày vào làm:
+                </span>
+                <span class="col-4">
+                    <input type="text" name="price" id="price">
+                </span>
+            </div>
+            <div class="row">
+                <span class="col-1"></span>
+                <span class="col-2" style="text-align: right;">
+                    Thực lĩnh:&nbsp;&nbsp;
+                </span>
+                <span class="col-3">
+                    <input type="text" name="price" id="price">
+                </span>
+                <span class="col-4"></span>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    <input type="submit" value="Hiển thị" class="submit">
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col">
+                    Kết quả sau khi điền dữ liệu và nhấn <b>tính lương</b>
+                </div>
+            </div>
+            <div class="row bg-blue">
+                <div class="col">
+                    KẾT QUẢ
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
